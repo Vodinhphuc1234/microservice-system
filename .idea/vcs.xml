@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/auth-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/book-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/borrowing-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/common-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/employee-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/eureka-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gateway-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/notification-service" vcs="Git" />
+  </component>
+</project>

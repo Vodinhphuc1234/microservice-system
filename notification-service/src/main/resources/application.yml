@@ -1,0 +1,25 @@
+server:
+  port: 9004
+eureka:
+  client:
+    service-url:
+      default-zone: http://eureka-server:8761/eureka
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        INPUT_EMAIL:
+          destination: emailNotification
+          group: notification
+        INPUT_PHONE:
+          destination: phoneNotification
+          group: notification
+        OUTPUT:
+          destination: outputNotification
+          content-type: application/json
+          group: notification

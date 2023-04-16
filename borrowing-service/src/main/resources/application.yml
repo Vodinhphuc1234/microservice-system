@@ -1,0 +1,39 @@
+server:
+  port: 9005
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/libraryBorrowing
+    username: root
+    password: Dinhphuc2009.
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      format-sql: true
+      type: info
+      use-sql-comments: true
+      properties:
+        hibernate.use_sql_comments: true
+        hibernate.format_sql: true
+  application:
+    name: borrowing-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        OUTPUT_EMAIL_NOTIFICATION:
+          destination: emailNotification
+          group: notification
+        OUTPUT_PHONE_NOTIFICATION:
+          destination: phoneNotification
+          group: notification
+eureka:
+  client:
+    service-url:
+      default-zone: http://eureka-server:8761/eureka
+
